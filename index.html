@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+<body>
+    <img src="./media/wall.gif" alt="">
+    <div id="navbar">
+        <div>
+            <audio src="./media/Theme.mp3" type = "audio/mpeg"></audio>
+            <img onclick="playPause()" src="./media/mute.svg" alt="">
+        </div>
+    </div>
+    <div id="container">
+        <div>
+            <img src="./media/logo.png" alt="">
+        </div>
+        <div>
+            <input oninput="debounce(main,1000)" type="text" name="" id="search" placeholder="Search Characters">
+            <div>
+                <img id="search_icon" src="./media/search.svg" alt="">
+            </div>            
+        </div>
+        <div id="query">
+            <!-- add data here -->
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/playPause.js"></script>
